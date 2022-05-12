@@ -21,7 +21,7 @@ public class VideoController {
     private VideoService videoService;
 
     @RequestMapping("find_by_id")
-    public Object findVideo(int videoId) {
+    public Object findVideo(Integer videoId) {
         return videoService.findById(videoId);
     }
 

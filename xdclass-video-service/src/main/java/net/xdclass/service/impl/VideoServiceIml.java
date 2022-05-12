@@ -18,7 +18,7 @@ public class VideoServiceIml implements VideoService {
     @Autowired
     private VideoMapper videoMapper;
     @Override
-    public Video findById(int videoId) {
+    public Video findById(Integer videoId) {
         return videoMapper.findById(videoId);
     }
 }

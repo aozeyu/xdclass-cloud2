@@ -9,5 +9,5 @@ import net.xdclass.domain.Video;
  * @author: 姚泽宇()
  **/
 public interface VideoService {
-    Video findById(int videoId);
+    Video findById(Integer videoId);
 }
