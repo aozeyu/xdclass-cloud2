@@ -22,4 +22,5 @@ public class VideoOrder {
     private String videoTitle;
     private String videoImg;
     private Integer userId;
+    private String serverInfo;
 }

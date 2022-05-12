@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @program: xdclass-cloud
  * @description: 222
@@ -21,8 +23,10 @@ public class VideoController {
     private VideoService videoService;
 
     @RequestMapping("find_by_id")
-    public Object findVideo(Integer videoId) {
-        return videoService.findById(videoId);
+    public Object findVideo(Integer videoId, HttpServletRequest request) {
+        Video video = videoService.findById(videoId);
+        video.setServerInfo(request.getServerName() + ":" + request.getServerPort());
+        return video;
     }
 
 }

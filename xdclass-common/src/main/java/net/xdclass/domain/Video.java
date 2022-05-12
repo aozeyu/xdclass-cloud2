@@ -20,4 +20,5 @@ public class Video {
     private Integer  price;
     private Date createTime;
     private Double point;
+    private String serverInfo;
 }
