@@ -9,15 +9,15 @@ import java.util.Date;
  * @description: 22
  * @packagename: net.xdclass.domain
  * @author: 姚泽宇
- * @date: 2022-05-12 13:09
+ * @date: 2022-05-12 13:22
  **/
 @Data
-public class User {
+public class Video {
     private Integer id;
-    private String name;
-    private String pwd;
-    private String headImg;
-    private String phone;
+    private String title;
+    private String summary;
+    private String coverImg;
+    private Integer  price;
     private Date createTime;
-    private String wechat;
+    private Double point;
 }
